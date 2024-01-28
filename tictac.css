@@ -1,0 +1,64 @@
+/* tictac.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust column width as needed */
+    gap: 5px; /* Adjust gap between squares as needed */
+}
+
+
+
+.square {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 24px; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Add more styles as needed */
+
